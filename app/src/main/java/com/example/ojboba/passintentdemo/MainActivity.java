@@ -48,11 +48,10 @@ public class MainActivity extends Activity implements OnClickListener {
         words.add(new Book("mustard", "yes", 1));
         Toast.makeText(this, "" + words, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this,ObjectTranDemo2.class);
-        intent.putExtra("Contact_list", words);
+        intent.putParcelableArrayListExtra("Contact_list", words);
         Bundle mBundle = new Bundle();
         intent.putExtras(mBundle);
         startActivity(intent);
-
     }
 
     public void onClick(View v) {
