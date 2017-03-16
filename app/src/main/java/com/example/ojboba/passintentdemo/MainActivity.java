@@ -44,8 +44,8 @@ public class MainActivity extends Activity implements OnClickListener {
     public void PacelableMethod(){
 
         ArrayList<Book> words = new ArrayList<Book>();
-        words.add(new Book("red", "weṭeṭṭi", 1));
-        words.add(new Book("mustard yellow", "chiwiiṭә", 1));
+        words.add(new Book("red", "yes", 1));
+        words.add(new Book("mustard", "yes", 1));
         Toast.makeText(this, "" + words, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this,ObjectTranDemo2.class);
         intent.putExtra("Contact_list", words);
